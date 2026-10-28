@@ -1,0 +1,80 @@
+/* Public copy: Hanken Grotesk (SIL OFL) replaces the licensed Hanken Grotesk trial files. */
+@font-face { font-family:'Hanken Grotesk'; src:url("../fonts/hanken-grotesk-latin-300-normal.woff2") format('woff2'); font-weight:300; font-style:normal; font-display:swap; }
+@font-face { font-family:'Hanken Grotesk'; src:url("../fonts/hanken-grotesk-latin-ext-300-normal.woff2") format('woff2'); font-weight:300; font-style:normal; font-display:swap; }
+@font-face { font-family:'Hanken Grotesk'; src:url("../fonts/hanken-grotesk-latin-300-italic.woff2") format('woff2'); font-weight:300; font-style:italic; font-display:swap; }
+@font-face { font-family:'Hanken Grotesk'; src:url("../fonts/hanken-grotesk-latin-ext-300-italic.woff2") format('woff2'); font-weight:300; font-style:italic; font-display:swap; }
+@font-face { font-family:'Hanken Grotesk'; src:url("../fonts/hanken-grotesk-latin-400-normal.woff2") format('woff2'); font-weight:400; font-style:normal; font-display:swap; }
+@font-face { font-family:'Hanken Grotesk'; src:url("../fonts/hanken-grotesk-latin-ext-400-normal.woff2") format('woff2'); font-weight:400; font-style:normal; font-display:swap; }
+@font-face { font-family:'Hanken Grotesk'; src:url("../fonts/hanken-grotesk-latin-400-italic.woff2") format('woff2'); font-weight:400; font-style:italic; font-display:swap; }
+@font-face { font-family:'Hanken Grotesk'; src:url("../fonts/hanken-grotesk-latin-ext-400-italic.woff2") format('woff2'); font-weight:400; font-style:italic; font-display:swap; }
+@font-face { font-family:'Hanken Grotesk'; src:url("../fonts/hanken-grotesk-latin-500-normal.woff2") format('woff2'); font-weight:500; font-style:normal; font-display:swap; }
+@font-face { font-family:'Hanken Grotesk'; src:url("../fonts/hanken-grotesk-latin-ext-500-normal.woff2") format('woff2'); font-weight:500; font-style:normal; font-display:swap; }
+@font-face { font-family:'Hanken Grotesk'; src:url("../fonts/hanken-grotesk-latin-500-italic.woff2") format('woff2'); font-weight:500; font-style:italic; font-display:swap; }
+@font-face { font-family:'Hanken Grotesk'; src:url("../fonts/hanken-grotesk-latin-ext-500-italic.woff2") format('woff2'); font-weight:500; font-style:italic; font-display:swap; }
+@font-face { font-family:'Hanken Grotesk'; src:url("../fonts/hanken-grotesk-latin-600-normal.woff2") format('woff2'); font-weight:600; font-style:normal; font-display:swap; }
+@font-face { font-family:'Hanken Grotesk'; src:url("../fonts/hanken-grotesk-latin-ext-600-normal.woff2") format('woff2'); font-weight:600; font-style:normal; font-display:swap; }
+@font-face { font-family:'Hanken Grotesk'; src:url("../fonts/hanken-grotesk-latin-600-italic.woff2") format('woff2'); font-weight:600; font-style:italic; font-display:swap; }
+@font-face { font-family:'Hanken Grotesk'; src:url("../fonts/hanken-grotesk-latin-ext-600-italic.woff2") format('woff2'); font-weight:600; font-style:italic; font-display:swap; }
+@font-face { font-family:'Hanken Grotesk'; src:url("../fonts/hanken-grotesk-latin-700-normal.woff2") format('woff2'); font-weight:700; font-style:normal; font-display:swap; }
+@font-face { font-family:'Hanken Grotesk'; src:url("../fonts/hanken-grotesk-latin-ext-700-normal.woff2") format('woff2'); font-weight:700; font-style:normal; font-display:swap; }
+@font-face { font-family:'Hanken Grotesk'; src:url("../fonts/hanken-grotesk-latin-700-italic.woff2") format('woff2'); font-weight:700; font-style:italic; font-display:swap; }
+@font-face { font-family:'Hanken Grotesk'; src:url("../fonts/hanken-grotesk-latin-ext-700-italic.woff2") format('woff2'); font-weight:700; font-style:italic; font-display:swap; }
+/* ===================================================================
+   Huma V2 — Typography tokens + webfonts
+   Brand intent: Oakes Grotesk. In-product: 'Hanken Grotesk' (local OTF)
+   ships with Oakes as fallback. One grotesk family for display + body —
+   weight and size create hierarchy, not font switching.
+   =================================================================== */
+
+/* ── 'Hanken Grotesk' — Huma V2 brand font ───────────────────── */
+/* ── CJK + Arabic secondary families ──────────────────────────────
+   Per project decision, no dedicated CJK/Arabic brand webfont is bundled.
+   These tokens use robust SYSTEM CJK/Arabic stacks so non-Latin text still
+   renders correctly on any OS without shipping extra font binaries. */
+
+:root {
+  /* ── Font families ──────────────────────────────────────────── */
+  --font-display: 'Hanken Grotesk', 'Oakes Grotesk', sans-serif;
+  --font-body:    'Hanken Grotesk', 'Oakes Grotesk', sans-serif;
+  /* CJK — brand font leads (backed); CJK glyphs fall through to system CJK faces */
+  --font-chinese: 'Hanken Grotesk', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  /* Arabic — brand font leads (backed); Arabic glyphs fall through to system Arabic faces */
+  --font-arabic:  'Hanken Grotesk', 'Geeza Pro', 'Segoe UI', 'Tahoma', sans-serif;
+  --font-mono:    'Courier New', ui-monospace, monospace; /* hex / tx ids */
+
+  /* ── Weights ────────────────────────────────────────────────── */
+  --fw-light:    300; /* @kind font */
+  --fw-regular:  400; /* @kind font */
+  --fw-medium:   500; /* @kind font */
+  --fw-semibold: 600; /* @kind font */
+  --fw-bold:     700; /* @kind font */
+
+  /* ── Type scale (product UI) ────────────────────────────────── */
+  --fs-page-title:   3rem;     /* 48px — dashboard h1, solid Deep Blue   */
+  --fs-display:      2.25rem;  /* 36px — hero / divider titles            */
+  --fs-section:      1.75rem;  /* 28px — section headings                 */
+  --fs-card-title:   1.25rem;  /* 20px — card titles                      */
+  --fs-lead:         1.125rem; /* 18px — page subtitle / lead             */
+  --fs-body:         1rem;     /* 16px — base body (also iOS no-zoom min)  */
+  --fs-label:        0.938rem; /* 15px — form labels / card labels        */
+  --fs-sm:           0.875rem; /* 14px — secondary / step labels          */
+  --fs-xs:           0.813rem; /* 13px — meta, pills, captions            */
+  --fs-2xs:          0.75rem;  /* 12px — nav links, uppercase micro       */
+  --fs-3xs:          0.688rem; /* 11px — section eyebrows / badges        */
+
+  /* ── KPI / impact figures — tabular numerals ────────────────── */
+  --font-stat-size:         2.5rem;  /* 40px — dashboard .impact-value    */
+  --font-stat-size-compact: 2rem;    /* 32px — tighter stat contexts      */
+
+  /* ── Line-heights ───────────────────────────────────────────── */
+  --lh-tight:   1.1;   /* @kind other */
+  --lh-snug:    1.32;  /* @kind other */
+  --lh-body:    1.6;   /* @kind other */
+  --lh-relaxed: 1.72;  /* @kind other */
+
+  /* ── Letter-spacing ─────────────────────────────────────────── */
+  --ls-tight:  -0.015em; /* @kind other */
+  --ls-normal:  0.02em;  /* @kind other */
+  --ls-wide:    0.09em;  /* @kind other */
+  --ls-eyebrow: 0.13em;  /* @kind other */
+}
