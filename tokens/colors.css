@@ -38,7 +38,7 @@
 
   /* ── Borders ────────────────────────────────────────────────── */
   --border-subtle: rgba(23,61,71,0.13);
-  --border-default: var(--border-subtle);  /* v2.1: alias, add-money.html referenced it before it existed */
+  --border-default: var(--border-subtle);  /* alias of --border-subtle */
   --border-strong: rgba(23,61,71,0.30);
 
   /* ── Financial semantics (CRITICAL) ──────────────────────────
@@ -49,7 +49,7 @@
   --fin-up-bg:    color-mix(in srgb, var(--fin-up) 12%, var(--brand-white));
   --fin-up-soft:  color-mix(in srgb, var(--fin-up) 15%, transparent);
   --fin-up-ring:  color-mix(in srgb, var(--fin-up) 30%, transparent);
-  --fin-down:     #a5536b;  /* losses, outflows, negative deltas. v2.1: a touch darker than --brand-red so text passes 4.5:1 on every surface */
+  --fin-down:     #a5536b;  /* losses, outflows, negative deltas. A touch darker than --brand-red so text passes 4.5:1 on every surface */
   --fin-down-bg:  color-mix(in srgb, var(--brand-red) 12%, var(--brand-white));
   --fin-down-soft: color-mix(in srgb, var(--brand-red) 15%, transparent);
   --fin-down-ring: color-mix(in srgb, var(--brand-red) 30%, transparent);
@@ -62,7 +62,7 @@
   --warning-bg: color-mix(in srgb, var(--warning) 15%, var(--brand-white));
   --warning-soft: rgba(184,160,48,0.15);
   --warning-ring: rgba(184,160,48,0.30);
-  --error:      var(--fin-down);  /* v2.1: text-safe red, same as --fin-down */
+  --error:      var(--fin-down);  /* text-safe red, same as --fin-down */
   --error-bg:   rgba(171,87,112,0.10);
   --error-soft: rgba(171,87,112,0.15);
   --error-ring: rgba(171,87,112,0.30);
